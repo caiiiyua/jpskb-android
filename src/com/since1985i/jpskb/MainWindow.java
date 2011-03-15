@@ -9,7 +9,9 @@ import android.R.integer;
 import android.app.Activity;
 import android.app.ListActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -54,16 +56,16 @@ public class MainWindow extends Activity {
         		new String[] {"ItemText"}, new int[] {R.id.ItemText});
         lv.setAdapter(listItemAdatper);
         
+        lv.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+					long arg3) {
+				// TODO Auto-generated method stub
+				setTitle("The "+arg2+" item clicked!");
+			}
+        	
+        });
     }
-    
-    private List<String> getData() {
-		
-    	List<String> data = new ArrayList<String>();
-    	data.add(getString(R.string.bar_stop));
-    	data.add(getString(R.string.bar_train));
-    	data.add(getString(R.string.bar_update));
-    	data.add(getString(R.string.bar_about));
-    	
-    	return data;
-	}
+
 }
