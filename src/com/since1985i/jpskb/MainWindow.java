@@ -8,6 +8,7 @@ import java.util.List;
 import android.R.integer;
 import android.app.Activity;
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -63,6 +64,7 @@ public class MainWindow extends Activity {
 					long arg3) {
 				// TODO Auto-generated method stub
 				setTitle("The "+arg2+" item clicked!");
+				startActivity(new Intent(Intent.ACTION_VIEW));
 			}
         	
         });
