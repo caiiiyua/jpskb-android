@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainWindow!</string>
+    <string name="app_name">JPSKB for Android</string>
+    <string name="bar_stop">Stop Query</string>
+    <string name="bar_train">Train Query</string>
+    <string name="bar_update">Check For Update</string>
+    <string name="bar_about">About</string>
+</resources>
