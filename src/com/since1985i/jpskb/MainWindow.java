@@ -63,8 +63,31 @@ public class MainWindow extends Activity {
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3) {
 				// TODO Auto-generated method stub
-				setTitle("The "+arg2+" item clicked!");
-				startActivity(new Intent(Intent.ACTION_VIEW));
+				//setTitle("The "+arg2+" item clicked!");
+				switch (arg2) {
+				case 0: {
+					Intent intent = new Intent(MainWindow.this, ActivityStopQuery.class);
+					startActivity(intent);
+					break;
+				}
+				case 1: {
+					Intent intent = new Intent(MainWindow.this, ActivityTrainQuery.class);
+					startActivity(intent);
+					break;
+				}
+				case 2: {
+					Intent intent = new Intent(MainWindow.this, ActivityUpdate.class);
+					startActivity(intent);
+					break;
+				}
+				case 3: {
+					Intent intent = new Intent(MainWindow.this, ActivityAbout.class);
+					startActivity(intent);
+					break;
+				}
+				default:
+					break;
+				}
 			}
         	
         });

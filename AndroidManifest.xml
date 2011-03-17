@@ -15,10 +15,15 @@
         </activity>
 		<activity android:name=".ActivityStopQuery"
                   android:label="@string/bar_stop">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityTrainQuery"
+                  android:label="@string/bar_train">
+        </activity>
+        <activity android:name=".ActivityUpdate"
+                  android:label="@string/bar_update">
+        </activity>
+        <activity android:name=".ActivityAbout"
+                  android:label="@string/bar_about">
         </activity>
     </application>
 </manifest>
